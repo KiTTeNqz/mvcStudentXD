@@ -14,12 +14,12 @@ class StudentDB
     self.db_connection.query('CREATE DATABASE IF NOT EXISTS stud_db')
     self.db_connection.query('USE stud_db')
     self.db_connection.query('DROP TABLE IF EXISTS student')
-    self.db_connection.query(File.read('C:/Users/Dmitry/RubymineProjects/RubyLabs/Lab2/database/scripts/create_table.sql'))
+    self.db_connection.query(File.read('C:/Users/Dmitry/RubymineProjects/RubyLabs/mvcStudentXD/lib/database/scripts/create_table.sql'))
     self.insert_data
   end
 
   def insert_data
-    db_connection.query(File.read('C:/Users/Dmitry/RubymineProjects/RubyLabs/Lab2/database/scripts/insert_data.sql'))
+    db_connection.query(File.read('C:/Users/Dmitry/RubymineProjects/RubyLabs/mvcStudentXD/lib/database/scripts/insert_data.sql'))
   end
 
   def select_by_id(id)

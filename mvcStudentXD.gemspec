@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.version = MvcStudentXD::VERSION
   spec.authors = ["papaSquid"]
   spec.email = ["mrxameleonx@mail.ru"]
-
+  spec.license       = "MIT"
   spec.summary = "Gem with Student MC"
   spec.description = "models and controllers"
   spec.homepage = "https://github.com/KiTTeNqz/mvcStudentXD"
@@ -16,8 +16,8 @@ Gem::Specification.new do |spec|
   spec.metadata["allowed_push_host"] = "https://rubygems.org"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+  spec.metadata["source_code_uri"] = "https://github.com/KiTTeNqz/mvcStudentXD"
+  spec.metadata["changelog_uri"] = "https://github.com/KiTTeNqz/mvcStudentXD/blob/master/CHANGELOG.md"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

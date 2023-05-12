@@ -1,4 +1,4 @@
-require_relative '../model/StudentBase'
+require_relative '../model/se'
 class StudentShort < StudentBase
 
 	public_class_method :new

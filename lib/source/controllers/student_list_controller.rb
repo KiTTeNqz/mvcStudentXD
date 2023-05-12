@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # frozen_string_literal: true
-require_relative 'student_list_adv'
+require_relative '../repositories/student_list_adv'
 require_relative 'adapters/student_list_adapter'
 require_relative 'database/student_list_db'
 require_relative 'converters/Converter_json'

@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-require_relative './students_db.rb'
+require_relative './udents_db.rb'
 
 class StudentListDB
   attr_accessor :database

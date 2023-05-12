@@ -1,5 +1,5 @@
 require 'json'
-require_relative 'StudentBase'
+require_relative '../model/StudentBase'
 class Student < StudentBase
 
 	public_class_method :new

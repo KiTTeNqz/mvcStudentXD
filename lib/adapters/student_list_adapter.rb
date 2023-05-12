@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-require_relative 'Student_list'
+require_relative '../Student_list'
 class StudentsListAdapter
   private_class_method :new
   def get_student(id)

@@ -1,5 +1,5 @@
 require 'json'
-require_relative 'Converter'
+require_relative '../converters/Converter'
 class ConverterJSON < Converter
 	public_class_method :new
 

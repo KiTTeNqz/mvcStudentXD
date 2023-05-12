@@ -2,13 +2,13 @@
 
 require 'glimmer-dsl-libui'
 require_relative 'student_input_form_controller'
-require_relative 'StudentBase'
+require_relative 'model/StudentBase'
 require 'win32api'
 
 class StudentInputForm
   include Glimmer
 
-  def initialize(controller, existing_student = nil)
+  def initialize(controller,existing_student = nil)
     @existing_student = existing_student.to_hash unless existing_student.nil?
     @controller = controller
     @entries = {}
@@ -44,9 +44,8 @@ class StudentInputForm
           on_clicked {
             values = @entries.transform_values { |v| v.text.force_encoding("utf-8").strip }
             values.transform_values! { |v| v.empty? ? nil : v}
-            print
-            print values
             @controller.process_fields(values)
+            @controller.refresh
           }
         }
       }

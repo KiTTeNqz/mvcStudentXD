@@ -1,4 +1,4 @@
-require_relative 'StudentBase'
+require_relative '../model/StudentBase'
 class StudentShort < StudentBase
 
 	public_class_method :new
@@ -11,7 +11,6 @@ class StudentShort < StudentBase
 	attr_reader :fio, :contact, :git, :id
 
 	def self.from_student_class(student)
-		puts("In studentShort: #{student.to_s}")
 		StudentShort.new(student.id, student.get_info)
 	end
 

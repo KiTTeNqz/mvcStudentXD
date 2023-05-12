@@ -1,4 +1,4 @@
-require_relative 'Converter'
+require_relative '../verter'
 class ConverterTxt < Converter
 	public_class_method :new
 

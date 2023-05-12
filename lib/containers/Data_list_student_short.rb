@@ -1,5 +1,5 @@
-require_relative 'Student_short'
-require_relative 'Data_table'
+require_relative '../model/Student_short'
+require_relative '../containers/Data_table'
 require_relative 'Data_list'
 class  DataListStudentShort < DataList
 

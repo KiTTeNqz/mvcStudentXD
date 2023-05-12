@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 # #encoding: UTF-8
 require 'mysql2'
-require_relative '../Data_list_student_short'
-require_relative '../Data_list'
-require_relative '../Student'
-require_relative '../Student_short'
+require_relative '../containers/Data_list_student_short'
+require_relative '../containers/Data_list'
+require_relative '../model/Student'
+require_relative '../model/Student_short'
 class StudentDB
 
   attr_accessor :db_connection
@@ -77,6 +77,3 @@ class StudentDB
   end
 
 end
-
-students_db = StudentDB.new
-students_db.insert_data

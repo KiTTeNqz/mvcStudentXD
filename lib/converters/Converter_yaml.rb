@@ -1,5 +1,5 @@
 require 'yaml'
-require_relative 'Converter'
+require_relative '../verter'
 class ConverterYAML < Converter
 	public_class_method :new
 	
